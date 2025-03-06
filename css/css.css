@@ -162,6 +162,7 @@ div .newbook, .POPbook{
     margin-top: 50px;
     margin-bottom: 200px;
     background-color: var(--light-color);
+    border-radius: 30px;
 }
 
 .imgnew, .imgPOP{
