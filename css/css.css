@@ -32,6 +32,14 @@ a { /* указываем то, что для всех ссылок мы уби�
 img { /*для всех картинок максимальная ширина будет 100%, чтобы изображение не вылазило за пределы родительского блока*/
     max-width: 100%;
 }
+body {
+    opacity: 0;
+    animation: ani 3s forwards;
+  }
+  @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
 
 
 
@@ -74,4 +82,132 @@ img { /*для всех картинок максимальная ширина �
 
 .navigation a:hover {
     background: #BAD78B;
+}
+
+.container{
+    padding-left: 20px; /* Внутренние отступы */
+    padding-right: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin: auto;
+}
+
+div .maininfo{
+    display: flex;
+    line-height: 25px;
+    text-align: center;
+    width: auto;
+    height: 500px;
+    justify-content: center;
+    background-color: var(--light-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+
+.section{
+    float: left;
+    text-align: left;
+    background-color: var(--block-color);
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    width: 400px;
+}
+.section h3{
+   font-size: 3rem;
+}
+.section p{
+    font-size: 2rem;
+}
+
+.place{
+    float: right;
+    background-color: var(--accent-color);
+}
+
+.place p{
+    font-size: large;
+    font-weight: 500;
+}
+
+.point{
+    border-radius: 100px;
+}
+
+.text, .textPOP{
+    float: center;
+    text-align: center;
+    background-color: var(--block-color);
+    margin: 30px;
+    border-radius: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+
+}
+
+.textPOP{
+    margin-top: 30px;
+}
+
+
+div .newbook, .POPbook{
+    display: flex;
+    line-height: 25px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    background-color: var(--light-color);
+}
+
+.imgnew, .imgPOP{
+    height: auto;
+    width: auto;
+    border: 3px solid green; 
+    border-radius: 30px;
+
+}
+
+.imgnew img {
+    width: 20%;
+    height: auto; 
+    margin: 80px;
+    border: 3px solid green; 
+    border-radius: 30px;
+
+}
+
+.red, .sochy, .gosp{
+    border-radius: 30px;
+    border: var(--secondary-color);
+}
+
+.imgPOP img {
+    width: 20%;
+    height: auto; 
+    margin: 80px;
+    border: 3px solid green; 
+    border-radius: 30px;
+
+}
+
+.downtwolist {
+    padding: 30px 0;
+    height: 100px;
+    background-color: var(--light-color);
+    margin: auto;
+}
+
+.wrapftwo p{
+    font-size: large;
+    font-weight: 700;
+    text-align: center;
+}
+
+.downtwolist a{
+    color: var(--secondary-color);
 }
