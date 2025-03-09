@@ -1,0 +1,155 @@
+@import url(https://fonts.google.com/share?selection.family=Poppins:wght@800);
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px задала рем, но пока не поняла как и где использовать, буду пробовать с ним работать на следующих страницах*/
+    --primary-color: #730F0F;
+    --link-color: #d4a373; 
+    --text-color: #000000; 
+    --accent-color: #CCD5AE; 
+    --block-color: #e9edc9;
+    --secondary-color: #1d4315;
+    --light-color: #fefae0;
+    --background-color: #adcea4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1.6rem; /* 16px */
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    color: var(--text-color); /*для текста на странице по умолчанию*/
+    background-color: var(--background-color);
+}
+
+body {
+    opacity: 0;
+    animation: ani 3s forwards;
+  }
+  @keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+a { /* указываем то, что для всех ссылок мы убираем нижнее подчеркивание*/
+    text-decoration: none;
+}
+
+img { /*для всех картинок максимальная ширина будет 100%, чтобы изображение не вылазило за пределы родительского блока*/
+    max-width: 100%;
+}
+
+.navigation{
+    background-color: var(--background-color);
+    padding-left: 20px; /* Внутренние отступы */
+    padding-right: 20px;
+    margin-right: 30px;
+    margin-left: 30px; /* Внешние отступы */
+    display: block;
+    width: auto;
+    margin: 0 auto 30px;
+}
+
+.navigation h2 {
+  font-family: monospace;
+  color: var(--primary-color);
+}
+.navigation ul {
+  list-style: none; 
+  margin: 0 auto;
+  padding: 0;
+  background: #adcea4;
+}
+
+.navigation  a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+  padding: 2rem;
+  display: block;
+  color: var(--secondary-color);
+  border-right: 1px solid #BAD78B;
+  background: var(--accent-color);
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a:hover {
+    background: #BAD78B;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+}
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+}
+.review {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.review-header {
+    font-weight: bold;
+}
+.review-rating {
+    color: var(--primary-color);
+}
+.form-group {
+    margin-bottom: 15px;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--accent-color); /* Use a defined color */
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+    color: var(--secondary-color); /* Use defined color */
+}
+
+footer a {
+    color: var(--primary-color); /* Use defined link color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

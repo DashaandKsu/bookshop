@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Отзывы о книжном магазине</title>
+    <link rel="icon" href="img/book.png">
+</head>
+<body>
+    <nav class="navigation">
+        <h2>For BOOK</h2>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="review.html">О нас</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Отзывы</h1>
+        <!--Существующие отзывы-->
+        <section id="reviews">
+            <h2>Отзывы наших Пользователей:</h2>
+            <div class="review">
+                <div class="review-header">Иван Иванов, 5 звезд <span class="review-rating">★★★★★</span></div>
+                <p>Отличный магазин! Большой выбор книг, приятные цены и вежливый персонал. Очень доволен покупкой!</p>
+            </div>
+            <div class="review">
+                <div class="review-header">Петр Петров, 4 звезды <span class="review-rating">★★★★☆</span></div>
+                <p>Хороший магазин, но хотелось бы больше акций и скидок.</p>
+            </div>
+        </section>
+        <!--Добавление отзыва-->
+        <section id="add-review">
+            <h2>Добавить отзыв:</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="rating">Рейтинг (1-5 звезд):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Ваш отзыв:</label>
+                    <textarea id="review-text" name="review-text" required></textarea>
+                </div>
+                <input type="submit" value="Отправить отзыв">
+            </form>
+        </section>
+    </div>
+    <!--Контакты магазина-->
+    <footer>
+        <p>
+            <strong>Контакты:</strong><br>
+            Адрес: ул. Книжная, 1<br>
+            Телефон: +7 (123) 456-78-90<br>
+            Email: <a href="mailto:info@bookstore.com">info@bookstore.com</a>
+        </p>
+    </footer>
+</body>
+</html>
